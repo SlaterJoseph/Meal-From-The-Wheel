@@ -14,17 +14,173 @@
     </button>
 
     <div id="sidebar" class="sidebar">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <br>
+
+      <form>
+        <ul class="options">
+          <br>
+          <!-- Food Type Options -->
+          <div>
+            <li>
+            <legend>Food Type</legend>
+              <div>
+                <label for="meat">
+                  <input type="checkbox" id="meat" name="meat" class="food-type"> Meat
+                </label>
+              </div>
+
+              <div>
+                <label for="dairy">
+                  <input type="checkbox" id="dairy" name="dairy" class="food-type"> Dairy
+                </label>
+              </div>
+
+              <div>
+                <label for="seafood">
+                  <input type="checkbox" id="seafood" name="seafood" class="food-type"> Seafood
+                </label>
+              </div>
+
+              <div>
+                <label for="vegan"></label>
+                  <input type="checkbox" id="vegan" name="vegan" class="food-type"> Vegan
+                </label>
+              </div>
+            </li>
+          </div>
+    
+          <!-- Dietary Refrence Options -->
+          <li>
+            <div>
+              <legend>Restrictions</legend>
+              <div>
+                <label>
+                  <input type="radio" name="dietary-preference" value="kosher"> Kosher
+                </label>
+              </div>
+              <div>
+                <label>
+                  <input type="radio" name="dietary-preference" value="halal"> Halal
+                </label>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <legend>Cuisine Types</legend>
+            <div>
+              <input type="checkbox" id="american" name="cuisine" value="american">
+              <label for="american">American</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="chinese" name="cuisine" value="chinese">
+              <label for="chinese">Chinese</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="english" name="cuisine" value="english">
+              <label for="english">English</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="french" name="cuisine" value="french">
+              <label for="french">French</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="german" name="cuisine" value="german">
+              <label for="german">German</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="indian" name="cuisine" value="indian">
+              <label for="indian">Indian</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="israeli" name="cuisine" value="israeli">
+              <label for="israeli">Israeli</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="italian" name="cuisine" value="italian">
+              <label for="italian">Italian</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="jamaican" name="cuisine" value="jamaican">
+              <label for="jamaican">Jamaican</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="japanese" name="cuisine" value="japanese">
+              <label for="japanese">Japanese</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="korean" name="cuisine" value="korean">
+              <label for="korean">Korean</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="mediterranean" name="cuisine" value="mediterranean">
+              <label for="mediterranean">Mediterranean</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="mexican" name="cuisine" value="mexican">
+              <label for="mexican">Mexican</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="polish" name="cuisine" value="polish">
+              <label for="polish">Polish</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="portuguese" name="cuisine" value="portuguese">
+              <label for="portuguese">Portuguese</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="russian" name="cuisine" value="russian">
+              <label for="russian">Russian</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="thai" name="cuisine" value="thai">
+              <label for="thai">Korean</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="vietnamese" name="cuisine" value="vietnamese">
+              <label for="vietnamese">Vietnamese</label>
+            </div>
+          </li>
+
+          <li>
+            <legend>Price Range</legend>
+            <input type="range" id="price" name="price" min="1" max="5">
+            <label for="price"></label>
+
+            <datalist id="dollarlist">
+              <option value="$"></option>
+              <option value="$$"></option>
+              <option value="$$$"></option>
+              <option value="$$$$"></option>
+              <option value="$$$$$"></option>
+            </datalist>
+          </li>
+        </ul>
+      </form>
     </div>
 
     <div class="content">
       <h1>Meal from the Wheel</h1>
       <p>Pick your meal options, then spin and find a resteraunt to your liking!</p>
+
+      
     </div>
 
     <script src="script.js"></script>
